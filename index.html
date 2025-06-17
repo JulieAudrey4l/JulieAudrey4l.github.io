@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Audrey L. | Portfolio</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
-    .container { max-width: 900px; margin: auto; padding: 40px; background: white; }
-    h1, h2 { color: #2c3e50; }
-    nav { background: #4CAF50; padding: 10px 20px; }
-    nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
-    section { margin-bottom: 40px; }
-    ul { padding-left: 20px; }
-    a { color: #4CAF50; }
-    .button { background: #4CAF50; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audrey L. | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Audrey 👋</h1>
+      <p>CS Student • Cybersecurity Enthusiast • Problem Solver</p>
+      <a href="#projects" class="button">View My Work</a>
+    </div>
+  </header>
 
-  <nav>
+  <nav class="navbar">
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -27,12 +24,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <section id="home">
-      <h1>Hello, I'm Audrey 👋</h1>
-      <p>I’m a Computer Science student at Kennesaw State University, passionate about cybersecurity, software engineering, and digital forensics.</p>
-    </section>
-
+  <main class="container">
     <section id="about">
       <h2>About Me</h2>
       <p>I transferred from a technical college where I earned an AAS in Computer Programming. I’m currently working toward my B.S. in Computer Science and actively learning cybersecurity concepts, and trying my hand at ethical hacking. I enjoy solving real-world security challenges and building projects that help improve digital safety.</p>
@@ -40,7 +32,7 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
+      <ul class="skills-grid">
         <li>Programming: Java, Python, C#, HTML/CSS</li>
         <li>Cybersecurity: Wireshark, auditd, John the Ripper, Splunk</li>
         <li>Tools: Git, Linux, VS Code, Apache Spark, Jupyter</li>
@@ -51,15 +43,28 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/JulieAudrey4l/Italian-Owls-Final-Product"> Pizza Mobile App</a> - Worked on a team to list and set software requirments to successfully develop a pizza app. </li>
-        <li><a href="">Linux File Monitoring</a> – Used auditd to trace file access and system activity, great for blue team operations.</li>
-        <li><a href="">HTTP Sniffing with Wireshark</a> – Captured and analyzed HTTP traffic for learning about network vulnerabilities.</li>
-      </ul>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Pizza Mobile App</h3>
+          <p>Worked on a team to define and implement software requirements for a fully functional pizza ordering app.</p>
+          <a href="https://github.com/JulieAudrey4l/Italian-Owls-Final-Product" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Linux File Monitoring</h3>
+          <p>Used auditd to trace file access and system activity, great for blue team operations.</p>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>HTTP Sniffing with Wireshark</h3>
+          <p>Captured and analyzed HTTP traffic for learning about network vulnerabilities.</p>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
     </section>
 
     <section id="resume">
       <h2>Resume</h2>
+      <iframe src="https://github.com/JulieAudrey4l/JulieAudrey4l.github.io/blob/main/Audrey%20Loisy%20Resume%202025.pdf" width="100%" height="500px" title="Resume Viewer"></iframe>
       <p><a href="https://github.com/JulieAudrey4l/JulieAudrey4l.github.io/blob/main/Audrey%20Loisy%20Resume%202025.pdf" class="button" target="_blank">Download My Resume (PDF)</a></p>
     </section>
 
@@ -68,9 +73,9 @@
       <ul>
         <li>TryHackMe - Introduction to Cybersecurity</li>
         <li>Central Georgia Technical College - Java Programmer</li>
-        <li> CodePath - Intro to Cybersecurity</li>
-        <li> CodePath - Intermediate Cybersecurity (Pending)</li>
-        <li> CompTIA - Security+ (Pending)</li>
+        <li>CodePath - Intro to Cybersecurity</li>
+        <li>CodePath - Intermediate Cybersecurity (Pending)</li>
+        <li>CompTIA - Security+ (Pending)</li>
         <li>More coming soon...</li>
       </ul>
     </section>
@@ -81,7 +86,11 @@
       <p>LinkedIn: <a href="https://www.linkedin.com/in/audrey-loisy-a67697328/">linkedin.com/in/audrey-loisy-a67697328/</a></p>
       <p>GitHub: <a href="https://github.com/JulieAudrey4l">github.com/julieAudrey4l</a></p>
     </section>
-  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Audrey L. All rights reserved.</p>
+  </footer>
 </body>
 </html>
 
