@@ -7,6 +7,16 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+  
+}
+.skills-icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px cyan);
+  transition: 0.3s ease;
+}
+
 /* Hero banner */
 .hero {
   background: url('https://github.com/JulieAudrey4l/JulieAudrey4l.github.io/blob/main/pexels-pixabay-60504.jpg') center/cover no-repeat;
