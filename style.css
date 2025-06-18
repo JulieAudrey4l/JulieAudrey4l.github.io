@@ -223,3 +223,31 @@ body.light-mode footer {
     gap: 10px;
   }
 }
+/* Scroll to Top Button */
+#scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+  border-radius: 0;
+  transition: background 0.3s ease;
+}
+
+#scrollTop:hover {
+  background-color: #0b68c1;
+}
+
+body.light-mode #scrollTop {
+  background-color: #0074cc;
+}
+
+body.light-mode #scrollTop:hover {
+  background-color: #005a99;
+}
