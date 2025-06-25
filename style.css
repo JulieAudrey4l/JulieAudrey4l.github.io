@@ -13,6 +13,30 @@ body:not(.light-mode) {
   color: #ffffff;
 }
 
+body:not(.light-mode) .container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body:not(.light-mode) .skills-icons div {
+  background-color: #2a2a2a;
+}
+
+body:not(.light-mode) .skills-icons span {
+  color: #ffffff;
+}
+
+body:not(.light-mode) .card {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: #ffffff;
+}
+
+body:not(.light-mode) footer {
+  background-color: #111;
+  color: #ccc;
+}
+
 /* Hero Section */
 .hero {
   background: url('pexels-pixabay-60504.jpg') center/cover no-repeat;
