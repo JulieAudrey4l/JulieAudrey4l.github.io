@@ -51,7 +51,7 @@ body:not(.light-mode) footer {
 
 /* Hero Section */
 .hero {
-  background: url('pexels-pixabay-60504.jpg') center/cover no-repeat;
+  background: url('images/pexels-pixabay-60504.jpg') center/cover no-repeat;
   text-align: center;
   padding: 100px 20px;
 }
