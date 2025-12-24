@@ -211,35 +211,39 @@ iframe {
 .contact-links p {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between icon and text */
+  gap: 10px;
   margin: 8px 0;
   font-size: 1.05rem;
 }
 
+/* Icons inside links */
 .contact-links i {
   font-size: 1.5rem;
   color: #0047ab;
   transition: color 0.3s ease;
 }
 
+/* Links text */
 .contact-links a {
-  color: #000;
+  color: #000; /* light mode text */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contact-links a:hover,
-.contact-links i:hover {
-  color: #003080; /* hover color matches your buttons */
+/* Hover effect for both icon and text */
+.contact-links a:hover i,
+.contact-links a:hover {
+  color: #003080;
 }
 
-body:not(.light-mode) .contact-links a,
-body:not(.light-mode) .contact-links i {
-  color: #fff;
+/* Dark mode */
+body:not(.light-mode) .contact-links i,
+body:not(.light-mode) .contact-links a {
+  color: #ffffff;
 }
 
-body:not(.light-mode) .contact-links a:hover,
-body:not(.light-mode) .contact-links i:hover {
+body:not(.light-mode) .contact-links a:hover i,
+body:not(.light-mode) .contact-links a:hover {
   color: #00aaff;
 }
 
